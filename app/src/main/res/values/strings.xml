@@ -22,4 +22,11 @@
     <string name="datos_de_entrega">Datos de entrega</string>
     <string name="error_en_pedido">Error en pedido</string>
     <string name="pedido_realizado">pedido realizado</string>
+    <string name="comprar_entradas">Comprar entradas</string>
+    <string name="encuentra_entradas_para_tus_peliculas_favoritas">Encuentra entradas para tus peliculas favoritas</string>
+    <string name="todo">TODO</string>
+    <string name="seleccione_el_cine">Seleccione el cine</string>
+
+
+    <string name="seleccione_la_zona_de_su_asiento">Seleccione la zona de su asiento</string>
 </resources>

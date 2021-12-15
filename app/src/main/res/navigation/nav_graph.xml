@@ -30,27 +30,27 @@
         tools:layout="@layout/fragment_third" >
         <action
             android:id="@+id/action_thirdFragment_to_fifthFragment"
-            app:destination="@id/fifthFragment" />
+            app:destination="@id/fiveFragment" />
         <action
-            android:id="@+id/action_thirdFragment_to_fourthFragment"
-            app:destination="@id/fourthFragment"
-            app:popUpTo="@id/fourthFragment"
-            app:popUpToInclusive="true" />
+            android:id="@+id/action_thirdFragment_to_fourFragment"
+            app:destination="@id/fourFragment"
+            app:popUpTo="@id/fourFragment"
+            app:popUpToInclusive="false" />
     </fragment>
     <fragment
-        android:id="@+id/fourthFragment"
-        android:name="gallego.morales.amazoniav2.FourthFragment"
-        android:label="fragment_fourth"
-        tools:layout="@layout/fragment_fourth" >
+        android:id="@+id/fourFragment"
+        android:name="gallego.morales.amazoniav2.FourFragment"
+        android:label="fragment_four"
+        tools:layout="@layout/fragment_four">
         <action
             android:id="@+id/action_fourthFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
     <fragment
-        android:id="@+id/fifthFragment"
-        android:name="gallego.morales.amazoniav2.FifthFragment"
-        android:label="fragment_fifth"
-        tools:layout="@layout/fragment_fifth" >
+        android:id="@+id/fiveFragment"
+        android:name="gallego.morales.amazoniav2.FiveFragment"
+        android:label="fragment_five"
+        tools:layout="@layout/fragment_five">
         <action
             android:id="@+id/action_fifthFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />

@@ -1,13 +1,12 @@
 package gallego.morales.amazoniav2
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import gallego.morales.amazoniav2.databinding.FragmentFifthBinding
-import gallego.morales.amazoniav2.databinding.FragmentFirstBinding
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -19,9 +18,9 @@ private const val ARG_PARAM2 = "param2"
  * Use the [FifthFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class FifthFragment : Fragment() {
+class FiveFragment : Fragment() {
 
-    private var _binding: FragmentFifthBinding? = null
+    private var _binding: gallego.morales.amazoniav2.databinding.FragmentFiveBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -32,7 +31,11 @@ class FifthFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentFifthBinding.inflate(inflater, container, false)
+        _binding = gallego.morales.amazoniav2.databinding.FragmentFiveBinding.inflate(
+            inflater,
+            container,
+            false
+        )
         return binding.root
 
     }
