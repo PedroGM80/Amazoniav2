@@ -1,10 +1,11 @@
 package gallego.morales.amazoniav2
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentSecondBinding
 
@@ -18,7 +19,7 @@ class SecondFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-
+    private var PRECIOBASE = 3.0f
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -26,14 +27,23 @@ class SecondFragment : Fragment() {
 
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment)
+            val bundle = bundleOf("sendedPrice" to PRECIOBASE)
+            findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment, bundle)
+        }
+        binding.selectCineA.setOnClickListener {
+            PRECIOBASE = 2.2f
+        }
+        binding.selectCineB.setOnClickListener {
+            PRECIOBASE = 2.5f
+        }
+        binding.selectCineC.setOnClickListener {
+            PRECIOBASE = 3.0f
         }
     }
 

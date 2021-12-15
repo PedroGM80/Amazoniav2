@@ -46,6 +46,7 @@ class FourFragment : Fragment() {
         binding.buttonFour.setOnClickListener {
             findNavController().navigate(R.id.action_fourthFragment_to_FirstFragment)
         }
+
     }
 
     override fun onDestroyView() {
