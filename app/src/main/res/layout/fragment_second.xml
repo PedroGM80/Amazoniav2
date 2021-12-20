@@ -10,6 +10,7 @@
     <ScrollView
         android:layout_width="354dp"
         android:layout_height="205dp"
+        android:scrollbarSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/textview_second"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,7 +25,7 @@
                 android:id="@+id/selectCineB"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/mk2_cinesur"
                 android:src="@drawable/mk2"
                 tools:ignore="SpeakableTextPresentCheck,DuplicateSpeakableTextCheck" />
 
@@ -32,7 +33,7 @@
                 android:id="@+id/selectCineC"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/union_cines"
                 android:src="@drawable/union"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -40,7 +41,7 @@
                 android:id="@+id/selectCineA"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/todo"
+                android:contentDescription="@string/yelmo_cines"
                 android:src="@drawable/cinesur"
                 tools:ignore="DuplicateSpeakableTextCheck" />
         </LinearLayout>
@@ -51,6 +52,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="4dp"
+        android:contentDescription="@string/cinesur"
         android:text="@string/seleccione_el_cine"
         android:textSize="20sp"
         android:textStyle="bold"

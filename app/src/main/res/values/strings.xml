@@ -29,4 +29,8 @@
 
 
     <string name="seleccione_la_zona_de_su_asiento">Seleccione la zona de su asiento</string>
+    <string name="cinesur">Cinesur</string>
+    <string name="union_cines">Union Cines</string>
+    <string name="yelmo_cines">Yelmo Cines</string>
+    <string name="mk2_cinesur">mk2 Cinesur</string>
 </resources>

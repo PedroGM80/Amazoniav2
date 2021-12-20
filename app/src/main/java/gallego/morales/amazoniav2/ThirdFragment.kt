@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentThirdBinding
@@ -17,7 +18,13 @@ import gallego.morales.amazoniav2.databinding.FragmentThirdBinding
  */
 class ThirdFragment: Fragment() {
 
+
+    private val PRIME_ZONE_PERCENT: Float = 0.40f
+    private val ECONOMY_ZONE_PERCENT: Float = 0.10f
+    private val STANDART_ZONE_PERCENT: Float = 0.20f
+    private var percent: Float = 0.0f
     private var _binding: FragmentThirdBinding? = null
+    private var precioCine: Float = 0.0f
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -30,27 +37,46 @@ class ThirdFragment: Fragment() {
 
         _binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
-
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+
         super.onViewCreated(view, savedInstanceState)
 
+
+
         binding.buttonThird.setOnClickListener {
-            val pago = (0 until 4).random()//genero un número aleatorio entre 0 y 4
-            if (pago == 1) {
-                findNavController().navigate(R.id.action_thirdFragment_to_fifthFragment)//utilizo el 1 para ir a el 5 fragmentoto
-            } else {
-                findNavController().navigate(R.id.action_thirdFragment_to_fourFragment)//el resto ira al cuarto fragmento
-            }
+            var value = (precioCine * percent)
+            Toast.makeText(activity, "Precio total $value", Toast.LENGTH_LONG).show()
+            val bundle = bundleOf("Zone" to value)
+            findNavController().navigate(R.id.action_thirdFragment_to_fourFragment, bundle)
+
+        }
+        binding.button.setOnClickListener {
+
+            binding.textviewThird.text = "La zona de su asiento es:\n Economy Zone"
+            percent = PRIME_ZONE_PERCENT
+        }
+        binding.button2.setOnClickListener {
+
+            binding.textviewThird.text = "La zona de su asiento es:\n Standart Zone"
+            percent = STANDART_ZONE_PERCENT
+        }
+        binding.button3.setOnClickListener {
+
+            percent = ECONOMY_ZONE_PERCENT
+            binding.textviewThird.text = "La zona de su asiento es:\n Prime Zone"
+
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var precioCineEspecifico = arguments?.getFloat("sendedPrice")
-        Toast.makeText(activity, "Test$precioCineEspecifico", Toast.LENGTH_LONG).show()
+        val precioCineEspecifico: Float? = arguments?.getFloat("sendedPrice")
+
+        if (precioCineEspecifico != null) {
+            precioCine = precioCineEspecifico
+        }
     }
 
     override fun onDestroyView() {

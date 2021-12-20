@@ -38,14 +38,21 @@ class SecondFragment : Fragment() {
         }
         binding.selectCineA.setOnClickListener {
             PRECIOBASE = 2.2f
+            binding.textviewSecond.text =
+                "Ha seleccionado el cine: " + binding.selectCineA.contentDescription.toString()
         }
         binding.selectCineB.setOnClickListener {
-            PRECIOBASE = 2.5f
+            PRECIOBASE = 50.5f
+            binding.textviewSecond.text =
+                "Ha seleccionado el cine: " + binding.selectCineB.contentDescription.toString()
         }
         binding.selectCineC.setOnClickListener {
-            PRECIOBASE = 3.0f
+            PRECIOBASE = 13.0f
+            binding.textviewSecond.text =
+                "Ha seleccionado el cine: " + binding.selectCineC.contentDescription.toString()
         }
     }
+
 
     override fun onDestroyView() {
         super.onDestroyView()

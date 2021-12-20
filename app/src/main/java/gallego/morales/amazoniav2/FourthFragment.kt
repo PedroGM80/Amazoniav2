@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -47,6 +48,12 @@ class FourFragment : Fragment() {
             findNavController().navigate(R.id.action_fourthFragment_to_FirstFragment)
         }
 
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        var precio: Float? = arguments?.getFloat("Zone")
+        Toast.makeText(activity, "Test$precio", Toast.LENGTH_LONG).show()
     }
 
     override fun onDestroyView() {
