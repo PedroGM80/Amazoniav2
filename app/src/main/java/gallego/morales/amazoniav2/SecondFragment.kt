@@ -42,12 +42,12 @@ class SecondFragment : Fragment() {
                 "Ha seleccionado el cine: " + binding.selectCineA.contentDescription.toString()
         }
         binding.selectCineB.setOnClickListener {
-            PRECIOBASE = 50.5f
+            PRECIOBASE = 3.5f
             binding.textviewSecond.text =
                 "Ha seleccionado el cine: " + binding.selectCineB.contentDescription.toString()
         }
         binding.selectCineC.setOnClickListener {
-            PRECIOBASE = 13.0f
+            PRECIOBASE = 3.0f
             binding.textviewSecond.text =
                 "Ha seleccionado el cine: " + binding.selectCineC.contentDescription.toString()
         }

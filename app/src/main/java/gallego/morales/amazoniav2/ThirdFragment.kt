@@ -11,11 +11,7 @@ import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentThirdBinding
 
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ThirdFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class ThirdFragment: Fragment() {
 
 
@@ -46,7 +42,7 @@ class ThirdFragment: Fragment() {
 
 
         binding.buttonThird.setOnClickListener {
-            var value = (precioCine * percent)
+            val value = (precioCine + (precioCine * percent))
             Toast.makeText(activity, "Precio total $value", Toast.LENGTH_LONG).show()
             val bundle = bundleOf("Zone" to value)
             findNavController().navigate(R.id.action_thirdFragment_to_fourFragment, bundle)
@@ -54,7 +50,7 @@ class ThirdFragment: Fragment() {
         }
         binding.button.setOnClickListener {
 
-            binding.textviewThird.text = "La zona de su asiento es:\n Economy Zone"
+            binding.textviewThird.text = "La zona de su asiento es:\n Prime Zone"
             percent = PRIME_ZONE_PERCENT
         }
         binding.button2.setOnClickListener {
@@ -65,7 +61,7 @@ class ThirdFragment: Fragment() {
         binding.button3.setOnClickListener {
 
             percent = ECONOMY_ZONE_PERCENT
-            binding.textviewThird.text = "La zona de su asiento es:\n Prime Zone"
+            binding.textviewThird.text = "La zona de su asiento es:\n Economy Zone"
 
         }
     }

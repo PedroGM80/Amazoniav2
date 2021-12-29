@@ -53,20 +53,20 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="178dp"
-        android:layout_height="60dp"
-        android:layout_marginBottom="324dp"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="332dp"
         android:background="@android:color/transparent"
         app:iconTint="@color/material_on_surface_stroke"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="179dp"
+        android:layout_width="160dp"
         android:layout_height="58dp"
         android:layout_marginTop="160dp"
         android:background="@android:color/transparent"
@@ -80,12 +80,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="183dp"
+        android:layout_width="164dp"
         android:layout_height="48dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="116dp"
         android:background="@android:color/transparent"
         app:iconTint="@color/material_on_surface_stroke"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -95,6 +96,42 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:barrierDirection="left"
-        app:constraint_referenced_ids="button3,button2,button" />
+        app:constraint_referenced_ids="button3,button2,button"
+        tools:layout_editor_absoluteX="128dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zona standart"
+        android:textColor="#81C632"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.543"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="48dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zona economica"
+        android:textColor="#8B74DF"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.568"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zona vip"
+        android:textColor="#FFDE09"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="64dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
