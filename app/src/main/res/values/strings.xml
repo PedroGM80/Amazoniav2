@@ -33,4 +33,22 @@
     <string name="union_cines">Union Cines</string>
     <string name="yelmo_cines">Yelmo Cines</string>
     <string name="mk2_cinesur">mk2 Cinesur</string>
+    <string name="zona_standart">Zona standart</string>
+    <string name="zona_economica">Zona economica</string>
+    <string name="zona_vip">Zona vip</string>
+    <string name="h">H</string>
+    <string name="k">K</string>
+    <string name="_1">1</string>
+    <string name="_4">4</string>
+    <string name="_11">11</string>
+    <string name="_10">10</string>
+    <string name="j">J</string>
+    <string name="i">I</string>
+    <string name="_2">2</string>
+    <string name="_3">3</string>
+    <string name="_5">5</string>
+    <string name="_6">6</string>
+    <string name="_7">7</string>
+    <string name="_8">8</string>
+    <string name="_9">9</string>
 </resources>

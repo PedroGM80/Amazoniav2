@@ -9,11 +9,6 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
 /**
  * A simple [Fragment] subclass.
  * Use the [FourthFragment.newInstance] factory method to
@@ -44,7 +39,7 @@ class FourFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonFour.setOnClickListener {
+        binding.next4.setOnClickListener {
             findNavController().navigate(R.id.action_fourthFragment_to_FirstFragment)
         }
 
@@ -52,7 +47,7 @@ class FourFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        var precio: Float? = arguments?.getFloat("Zone")
+        val precio: Float? = arguments?.getFloat("Zone")
         Toast.makeText(activity, "Test$precio", Toast.LENGTH_LONG).show()
     }
 
