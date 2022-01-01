@@ -55,4 +55,14 @@
             android:id="@+id/action_fifthFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/sixFragment"
+        android:name="gallego.morales.amazoniav2.SixFragment"
+        android:label="fragment_six"
+        tools:layout="@layout/fragment_six" />
+    <fragment
+        android:id="@+id/sevenFragment"
+        android:name="gallego.morales.amazoniav2.SevenFragment"
+        android:label="fragment_seven"
+        tools:layout="@layout/fragment_seven" />
 </navigation>

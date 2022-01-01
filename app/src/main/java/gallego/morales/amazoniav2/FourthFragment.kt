@@ -47,8 +47,8 @@ class FourFragment : Fragment() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        val precio: Float? = arguments?.getFloat("Zone")
-        Toast.makeText(activity, "Test$precio", Toast.LENGTH_LONG).show()
+        val price: Float? = arguments?.getFloat("Zone")
+        Toast.makeText(activity, "Test$price", Toast.LENGTH_LONG).show()
     }
 
     override fun onDestroyView() {
