@@ -1,59 +1,76 @@
 package gallego.morales.amazoniav2
 
 import android.os.Bundle
+import android.util.Log.i
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import gallego.morales.amazoniav2.databinding.FragmentEightBinding
+
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [EightFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
+
 class EightFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private var selection: String = ""
 
+    private var _binding: FragmentEightBinding? = null
+
+    // This property is only valid between onCreateView and
+    // onDestroyView.
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_eight, container, false)
+
+        _binding = FragmentEightBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment EightFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            EightFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        binding.switch1.setOnClickListener {
+            if (this.binding.switch1.isChecked) {
+                i(":::Mi tag", "switch1")
+                binding.radioGroupPalomitas.visibility = View.VISIBLE
+            } else {
+                binding.radioGroupPalomitas.visibility = View.INVISIBLE
             }
+        }
+        binding.switch2.setOnClickListener {
+            if (this.binding.switch2.isChecked) {
+                i(":::Mi tag", "switch2")
+                binding.RadioGroupRefresco.visibility = View.VISIBLE
+                if (selection != "") {
+                    binding.RadioGroupRefrescoSabores.visibility = View.VISIBLE
+                }
+            } else {
+                binding.RadioGroupRefresco.visibility = View.INVISIBLE
+
+                binding.RadioGroupRefrescoSabores.visibility = View.INVISIBLE
+            }
+        }
+
+        binding.radioButton1b.setOnClickListener {
+            binding.RadioGroupRefrescoSabores.visibility = View.VISIBLE
+            selection = "1"
+        }
+        binding.radioButton2b.setOnClickListener {
+            binding.RadioGroupRefrescoSabores.visibility = View.VISIBLE
+            selection = "2"
+        }
+        binding.radioButton3b.setOnClickListener {
+            binding.RadioGroupRefrescoSabores.visibility = View.VISIBLE
+            selection = "3"
+        }
+
     }
+
 }
+
+
+

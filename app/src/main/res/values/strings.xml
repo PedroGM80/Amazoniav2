@@ -54,4 +54,19 @@
     <string name="seleccione_asiento_s">Seleccione asiento/s</string>
     <string name="nombre">Nombre</string>
     <string name="seguir">Seguir</string>
+    <string name="naranja">Naranja</string>
+    <string name="complementos">Añadir complementos</string>
+    <string name="limon">Limón</string>
+    <string name="cola">Cola</string>
+    <string name="normal">Normal</string>
+    <string name="zero">Zero</string>
+    <string name="light">Light</string>
+    <string name="de_tipo">De tipo:</string>
+    <string name="refresco">Refresco</string>
+    <string name="mantequilla">Mantequilla</string>
+    <string name="sal">Sal</string>
+    <string name="caramelo">Caramelo</string>
+    <string name="palomitas">Palomitas</string>
+    <string name="elegir_asiento">Elegir asiento</string>
+    <string name="de_sabor">De sabor:</string>
 </resources>
