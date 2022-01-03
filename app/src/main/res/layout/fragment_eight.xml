@@ -41,10 +41,12 @@
         android:textAlignment="center" />
 
     <RadioGroup
+        android:id="@+id/radioGroup1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:textAlignment="center">
+        android:textAlignment="center"
+        android:visibility="invisible">
 
         <RadioButton
             android:id="@+id/radioButton"
@@ -52,7 +54,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Caramelo"
             android:textAlignment="center" />
 
         <RadioButton
@@ -61,7 +63,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Sal"
             android:textAlignment="center" />
 
         <RadioButton
@@ -70,7 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Mantequilla"
             android:textAlignment="center" />
     </RadioGroup>
 
@@ -80,7 +82,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:minHeight="48dp"
-        android:text="Switch"
+        android:text="Refresco"
         android:textAlignment="center" />
 
     <TextView
@@ -88,7 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="TextView"
+        android:text="De tipo:"
         android:textAlignment="center" />
 
     <RadioGroup
@@ -105,29 +107,25 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Light"
             android:textAlignment="center" />
-
         <RadioButton
             android:id="@+id/radioButton2b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Zero"
             android:textAlignment="center" />
-
         <RadioButton
             android:id="@+id/radioButton3b"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Normal"
             android:textAlignment="center" />
-
     </RadioGroup>
-
 
     <RadioGroup
         android:id="@+id/RadioGroupc"
@@ -136,32 +134,29 @@
         android:layout_gravity="center_horizontal"
         android:textAlignment="center"
         android:visibility="invisible">
-
         <RadioButton
             android:id="@+id/radioButtonc"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Cola"
             android:textAlignment="center" />
-
         <RadioButton
             android:id="@+id/radioButton2c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Limón"
             android:textAlignment="center" />
-
         <RadioButton
             android:id="@+id/radioButton3c"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:minWidth="100dp"
-            android:text="RadioButton"
+            android:text="Naranja"
             android:textAlignment="center" />
     </RadioGroup>
 
@@ -169,7 +164,7 @@
         android:id="@+id/button17"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="Añadir complementos" />
 
     <Switch
         android:id="@+id/switch3"
@@ -178,11 +173,13 @@
         android:layout_gravity="center_horizontal"
         android:minHeight="48dp"
         android:text="Elegir asiento"
-        android:textAlignment="center"></Switch>
+        android:textAlignment="center">
+
+    </Switch>
 
     <Button
         android:id="@+id/buttonNext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button" />
+        android:text="@string/seguir" />
 </LinearLayout>
