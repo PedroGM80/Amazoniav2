@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_FirstFragment_to_eightFragment"
+            app:destination="@id/eightFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -65,4 +68,9 @@
         android:name="gallego.morales.amazoniav2.SevenFragment"
         android:label="fragment_seven"
         tools:layout="@layout/fragment_seven" />
+    <fragment
+        android:id="@+id/eightFragment"
+        android:name="gallego.morales.amazoniav2.EightFragment"
+        android:label="fragment_eight"
+        tools:layout="@layout/fragment_eight" />
 </navigation>

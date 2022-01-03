@@ -52,4 +52,5 @@
     <string name="_8">8</string>
     <string name="_9">9</string>
     <string name="seleccione_asiento_s">Seleccione asiento/s</string>
+    <string name="nombre">Nombre</string>
 </resources>

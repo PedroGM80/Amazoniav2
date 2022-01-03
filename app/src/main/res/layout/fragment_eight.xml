@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    tools:context=".EightFragment">
+
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:autofillHints=""
+        android:contentDescription="nombre"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxWidth="200dp"
+        android:minHeight="48dp"
+        android:text="Nombre:"
+        android:textAlignment="center" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:text="Palomitas"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="De tipo:"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:text="Switch"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textViewb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="TextView"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radioButtonb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton2b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton3b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+    </RadioGroup>
+
+
+    <RadioGroup
+        android:id="@+id/RadioGroupc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:visibility="invisible">
+
+        <RadioButton
+            android:id="@+id/radioButtonc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton2c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+
+        <RadioButton
+            android:id="@+id/radioButton3c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:minWidth="100dp"
+            android:text="RadioButton"
+            android:textAlignment="center" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+    <Switch
+        android:id="@+id/switch3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:minHeight="48dp"
+        android:text="Elegir asiento"
+        android:textAlignment="center"></Switch>
+
+    <Button
+        android:id="@+id/buttonNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+</LinearLayout>
