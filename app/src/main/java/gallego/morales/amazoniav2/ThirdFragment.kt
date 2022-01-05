@@ -1,5 +1,7 @@
 package gallego.morales.amazoniav2
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -26,35 +28,39 @@ class ThirdFragment: Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
 
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
+        activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         _binding = FragmentThirdBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
-
-
-
         binding.buttonThird.setOnClickListener {
-            val value = (precioCine + (precioCine * percent))
-            Toast.makeText(activity, "Precio total $value", Toast.LENGTH_LONG).show()
-            val bundle = bundleOf("Zone" to value)
-            findNavController().navigate(R.id.action_thirdFragment_to_fourFragment, bundle)
-
+            if (binding.textviewThird.text != "Seleccione la zona de su asiento") {
+                val value = (precioCine + (precioCine * percent))
+                Toast.makeText(activity, "Precio total $value", Toast.LENGTH_LONG).show()
+                val bundle = bundleOf("Zone" to value)
+                findNavController().navigate(R.id.action_thirdFragment_to_eightFragment, bundle)
+            } else {
+                Toast.makeText(
+                    activity,
+                    "Por favor seleccione una zona para su asiento",
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
         binding.button.setOnClickListener {
-
             binding.textviewThird.text = "La zona de su asiento es:\n Prime Zone"
             percent = PRIME_ZONE_PERCENT
         }
         binding.button2.setOnClickListener {
-
             binding.textviewThird.text = "La zona de su asiento es:\n Standart Zone"
             percent = STANDART_ZONE_PERCENT
         }

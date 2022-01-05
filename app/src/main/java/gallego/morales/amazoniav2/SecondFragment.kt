@@ -1,5 +1,7 @@
 package gallego.morales.amazoniav2
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -20,15 +22,18 @@ class SecondFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private var PRECIOBASE = 3.0f
+
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
+        activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         _binding = FragmentSecondBinding.inflate(inflater, container, false)
         return binding.root
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
@@ -39,17 +44,17 @@ class SecondFragment : Fragment() {
         binding.selectCineA.setOnClickListener {
             PRECIOBASE = 2.2f
             binding.textviewSecond.text =
-                "Ha seleccionado el cine: " + binding.selectCineA.contentDescription.toString()
+                "Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"
         }
         binding.selectCineB.setOnClickListener {
             PRECIOBASE = 3.5f
             binding.textviewSecond.text =
-                "Ha seleccionado el cine: " + binding.selectCineB.contentDescription.toString()
+                """Ha seleccionado el cine: ${binding.selectCineB.contentDescription}"""
         }
         binding.selectCineC.setOnClickListener {
             PRECIOBASE = 3.0f
             binding.textviewSecond.text =
-                "Ha seleccionado el cine: " + binding.selectCineC.contentDescription.toString()
+                """Ha seleccionado el cine: """ + binding.selectCineC.contentDescription
         }
     }
 

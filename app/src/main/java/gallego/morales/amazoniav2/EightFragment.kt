@@ -1,11 +1,14 @@
 package gallego.morales.amazoniav2
 
+import android.annotation.SuppressLint
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.util.Log.i
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentEightBinding
 
 
@@ -22,11 +25,13 @@ class EightFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-
+    ): View {
+        activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         _binding = FragmentEightBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -66,6 +71,9 @@ class EightFragment : Fragment() {
         binding.radioButton3b.setOnClickListener {
             binding.RadioGroupRefrescoSabores.visibility = View.VISIBLE
             selection = "3"
+        }
+        binding.buttonNext.setOnClickListener {
+            findNavController().navigate(R.id.action_eightFragment_to_fourFragment)
         }
 
     }

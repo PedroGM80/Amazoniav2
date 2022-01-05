@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/FirstFragment">
-
     <fragment
         android:id="@+id/FirstFragment"
         android:name="gallego.morales.amazoniav2.FirstFragment"
@@ -13,9 +12,6 @@
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
             app:destination="@id/SecondFragment" />
-        <action
-            android:id="@+id/action_FirstFragment_to_eightFragment"
-            app:destination="@id/eightFragment" />
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
@@ -32,13 +28,8 @@
         android:label="fragment_third"
         tools:layout="@layout/fragment_third" >
         <action
-            android:id="@+id/action_thirdFragment_to_fifthFragment"
-            app:destination="@id/fiveFragment" />
-        <action
-            android:id="@+id/action_thirdFragment_to_fourFragment"
-            app:destination="@id/fourFragment"
-            app:popUpTo="@id/fourFragment"
-            app:popUpToInclusive="false" />
+            android:id="@+id/action_thirdFragment_to_eightFragment"
+            app:destination="@id/eightFragment" />
     </fragment>
     <fragment
         android:id="@+id/fourFragment"
@@ -46,31 +37,45 @@
         android:label="fragment_four"
         tools:layout="@layout/fragment_four">
         <action
-            android:id="@+id/action_fourthFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_fourFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
     </fragment>
     <fragment
         android:id="@+id/fiveFragment"
         android:name="gallego.morales.amazoniav2.FiveFragment"
         android:label="fragment_five"
-        tools:layout="@layout/fragment_five">
-        <action
-            android:id="@+id/action_fifthFragment_to_thirdFragment"
-            app:destination="@id/thirdFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_five" />
     <fragment
         android:id="@+id/sixFragment"
         android:name="gallego.morales.amazoniav2.SixFragment"
         android:label="fragment_six"
-        tools:layout="@layout/fragment_six" />
+        tools:layout="@layout/fragment_six">
+        <action
+            android:id="@+id/action_sixFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+    </fragment>
     <fragment
         android:id="@+id/sevenFragment"
         android:name="gallego.morales.amazoniav2.SevenFragment"
         android:label="fragment_seven"
-        tools:layout="@layout/fragment_seven" />
+        tools:layout="@layout/fragment_seven">
+        <action
+            android:id="@+id/action_sevenFragment_to_fiveFragment"
+            app:destination="@id/fiveFragment" />
+    </fragment>
     <fragment
         android:id="@+id/eightFragment"
         android:name="gallego.morales.amazoniav2.EightFragment"
         android:label="fragment_eight"
-        tools:layout="@layout/fragment_eight" />
+        tools:layout="@layout/fragment_eight">
+        <action
+            android:id="@+id/action_eightFragment_to_fourFragment"
+            app:destination="@id/fourFragment" />
+        <action
+            android:id="@+id/action_eightFragment_to_sevenFragment"
+            app:destination="@id/sevenFragment" />
+        <action
+            android:id="@+id/action_eightFragment_to_sixFragment"
+            app:destination="@id/sixFragment" />
+    </fragment>
 </navigation>

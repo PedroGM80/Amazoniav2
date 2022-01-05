@@ -1,5 +1,6 @@
 package gallego.morales.amazoniav2
 
+import android.content.pm.ActivityInfo
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -33,6 +34,7 @@ class SixFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        getActivity()?.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_six, container, false)
     }
