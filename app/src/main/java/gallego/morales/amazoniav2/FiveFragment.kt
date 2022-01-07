@@ -29,7 +29,6 @@ class FiveFragment : Fragment() {
             false
         )
         return binding.root
-
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

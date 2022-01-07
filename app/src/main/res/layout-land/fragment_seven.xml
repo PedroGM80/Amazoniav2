@@ -30,113 +30,124 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/A1"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             android:visibility="visible"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/A2"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/A3"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/A4"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/A5"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/A6"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button4"
+            android:id="@+id/A7"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/A8"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/A9"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/A10"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/A11"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
@@ -162,112 +173,123 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button97"
+            android:id="@+id/B1"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button98"
+            android:id="@+id/B2"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button99"
+            android:id="@+id/B3"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button100"
+            android:id="@+id/B4"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button101"
+            android:id="@+id/B5"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button102"
+            android:id="@+id/B6"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button103"
+            android:id="@+id/B7"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button104"
+            android:id="@+id/B8"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button105"
+            android:id="@+id/B9"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button106"
+            android:id="@+id/B10"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button107"
+            android:id="@+id/B11"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>
@@ -293,114 +315,125 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/button108"
+            android:id="@+id/C1"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
             android:enabled="false"
+            android:onClick="addSeat"
             android:visibility="invisible"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button109"
+            android:id="@+id/C2"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button110"
+            android:id="@+id/C3"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button111"
+            android:id="@+id/C4"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button112"
+            android:id="@+id/C5"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button113"
+            android:id="@+id/C6"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button114"
+            android:id="@+id/C7"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button115"
+            android:id="@+id/C8"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button116"
+            android:id="@+id/C9"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button117"
+            android:id="@+id/C10"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <Button
-            android:id="@+id/button118"
+            android:id="@+id/C11"
             style="?android:attr/buttonBarButtonStyle"
             android:layout_width="48dp"
             android:layout_height="50dp"
             android:layout_marginHorizontal="3dp"
             android:backgroundTint="#C7BDE3"
+            android:onClick="addSeat"
             app:cornerRadius="5dp"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </TableRow>

@@ -13,19 +13,15 @@ import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentThirdBinding
 
 
+class ThirdFragment : Fragment() {
 
-class ThirdFragment: Fragment() {
-
-
+    private var zonaCine = ""
     private val PRIME_ZONE_PERCENT: Float = 0.40f
     private val ECONOMY_ZONE_PERCENT: Float = 0.10f
     private val STANDART_ZONE_PERCENT: Float = 0.20f
     private var percent: Float = 0.0f
     private var _binding: FragmentThirdBinding? = null
     private var precioCine: Float = 0.0f
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
 
     @SuppressLint("SourceLockedOrientationActivity")
@@ -42,11 +38,12 @@ class ThirdFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
 
         super.onViewCreated(view, savedInstanceState)
+        //val nombreCine: String? = arguments?.getString("cineName")
         binding.buttonThird.setOnClickListener {
             if (binding.textviewThird.text != "Seleccione la zona de su asiento") {
                 val value = (precioCine + (precioCine * percent))
                 Toast.makeText(activity, "Precio total $value", Toast.LENGTH_LONG).show()
-                val bundle = bundleOf("Zone" to value)
+                val bundle = bundleOf("Zone" to value, "zoneName" to zonaCine)//envia datos
                 findNavController().navigate(R.id.action_thirdFragment_to_eightFragment, bundle)
             } else {
                 Toast.makeText(
@@ -59,22 +56,25 @@ class ThirdFragment: Fragment() {
         binding.button.setOnClickListener {
             binding.textviewThird.text = "La zona de su asiento es:\n Prime Zone"
             percent = PRIME_ZONE_PERCENT
+            zonaCine = "prime"
         }
         binding.button2.setOnClickListener {
             binding.textviewThird.text = "La zona de su asiento es:\n Standart Zone"
             percent = STANDART_ZONE_PERCENT
+            zonaCine = "standard"
         }
         binding.button3.setOnClickListener {
 
             percent = ECONOMY_ZONE_PERCENT
             binding.textviewThird.text = "La zona de su asiento es:\n Economy Zone"
-
+            zonaCine = "economy"
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val precioCineEspecifico: Float? = arguments?.getFloat("sendedPrice")
+
 
         if (precioCineEspecifico != null) {
             precioCine = precioCineEspecifico

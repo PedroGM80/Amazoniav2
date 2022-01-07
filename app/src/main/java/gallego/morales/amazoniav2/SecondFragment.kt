@@ -22,6 +22,7 @@ class SecondFragment : Fragment() {
     // onDestroyView.
     private val binding get() = _binding!!
     private var PRECIOBASE = 3.0f
+    private var NOMBRECINE = ""
 
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(
@@ -36,23 +37,24 @@ class SecondFragment : Fragment() {
     @SuppressLint("SetTextI18n")
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         binding.buttonSecond.setOnClickListener {
-            val bundle = bundleOf("sendedPrice" to PRECIOBASE)
+            val bundle = bundleOf("cineName" to NOMBRECINE, "sendedPrice" to PRECIOBASE)
             findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment, bundle)
         }
         binding.selectCineA.setOnClickListener {
             PRECIOBASE = 2.2f
-            binding.textviewSecond.text =
-                "Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"
+            NOMBRECINE = binding.selectCineA.contentDescription as String
+            "Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"
         }
         binding.selectCineB.setOnClickListener {
             PRECIOBASE = 3.5f
+            NOMBRECINE = binding.selectCineB.contentDescription as String
             binding.textviewSecond.text =
                 """Ha seleccionado el cine: ${binding.selectCineB.contentDescription}"""
         }
         binding.selectCineC.setOnClickListener {
             PRECIOBASE = 3.0f
+            NOMBRECINE = binding.selectCineC.contentDescription as String
             binding.textviewSecond.text =
                 """Ha seleccionado el cine: """ + binding.selectCineC.contentDescription
         }

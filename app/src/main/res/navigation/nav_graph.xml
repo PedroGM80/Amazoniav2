@@ -25,8 +25,8 @@
     <fragment
         android:id="@+id/thirdFragment"
         android:name="gallego.morales.amazoniav2.ThirdFragment"
-        android:label="fragment_third"
-        tools:layout="@layout/fragment_third" >
+        android:label="Select zone"
+        tools:layout="@layout/fragment_third">
         <action
             android:id="@+id/action_thirdFragment_to_eightFragment"
             app:destination="@id/eightFragment" />
@@ -66,7 +66,7 @@
     <fragment
         android:id="@+id/eightFragment"
         android:name="gallego.morales.amazoniav2.EightFragment"
-        android:label="fragment_eight"
+        android:label="Select your complement"
         tools:layout="@layout/fragment_eight">
         <action
             android:id="@+id/action_eightFragment_to_fourFragment"

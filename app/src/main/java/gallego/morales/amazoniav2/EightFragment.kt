@@ -7,6 +7,7 @@ import android.util.Log.i
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentEightBinding
@@ -19,24 +20,24 @@ import gallego.morales.amazoniav2.databinding.FragmentEightBinding
 class EightFragment : Fragment() {
 
     private var selection: String = ""
-
     private var _binding: FragmentEightBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
     private val binding get() = _binding!!
+
 
     @SuppressLint("SourceLockedOrientationActivity")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
+
     ): View {
         activity?.requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         _binding = FragmentEightBinding.inflate(inflater, container, false)
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        //val nombreCine:String?=arguments?.getString("Zone")
         super.onViewCreated(view, savedInstanceState)
         binding.switch1.setOnClickListener {
             if (this.binding.switch1.isChecked) {
@@ -55,7 +56,6 @@ class EightFragment : Fragment() {
                 }
             } else {
                 binding.RadioGroupRefresco.visibility = View.INVISIBLE
-
                 binding.RadioGroupRefrescoSabores.visibility = View.INVISIBLE
             }
         }
@@ -73,11 +73,19 @@ class EightFragment : Fragment() {
             selection = "3"
         }
         binding.buttonNext.setOnClickListener {
-            findNavController().navigate(R.id.action_eightFragment_to_fourFragment)
+            val zonaCine: String? = arguments?.getString("zoneName")
+            Toast.makeText(activity, zonaCine, Toast.LENGTH_LONG).show()
+            if (zonaCine == "prime") {
+                findNavController().navigate(R.id.action_eightFragment_to_fourFragment)
+            }
+            if (zonaCine == "standard") {
+                findNavController().navigate(R.id.action_eightFragment_to_sixFragment)
+            }
+            if (zonaCine == "economy") {
+                findNavController().navigate(R.id.action_eightFragment_to_sevenFragment)
+            }
         }
-
     }
-
 }
 
 

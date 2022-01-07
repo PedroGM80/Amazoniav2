@@ -4,8 +4,8 @@
     <!-- Strings used for fragments for navigation -->
     <string name="first_fragment_label">Intro</string>
     <string name="second_fragment_label">Select cinema</string>
-    <string name="fragment_third">Select zone</string>
-    <string name="fragment_eight">Select complement</string>
+    <string name="fragment_third_label">Select zone</string>
+    <string name="fragment_eight_label">Select complement</string>
 
     <string name="next">Next</string>
     <string name="previous">Previous</string>
