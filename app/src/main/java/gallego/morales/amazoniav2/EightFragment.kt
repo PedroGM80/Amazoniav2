@@ -10,6 +10,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.os.bundleOf
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.MainActivity.Companion.asientos
@@ -125,14 +126,16 @@ class EightFragment : Fragment() {
             if (binding.switch3.isChecked) {
                 val zonaCine: String? = arguments?.getString("zoneName")
                 Toast.makeText(activity, zonaCine, Toast.LENGTH_LONG).show()
+                val value: Double? = arguments?.getDouble("PrecioAsiento")
+                val bundle = bundleOf("precioPlaza" to value)
                 if (zonaCine == "prime") {
-                    findNavController().navigate(R.id.action_eightFragment_to_fourFragment)
+                    findNavController().navigate(R.id.action_eightFragment_to_fourFragment, bundle)
                 }
                 if (zonaCine == "standard") {
-                    findNavController().navigate(R.id.action_eightFragment_to_sixFragment)
+                    findNavController().navigate(R.id.action_eightFragment_to_sixFragment, bundle)
                 }
                 if (zonaCine == "economy") {
-                    findNavController().navigate(R.id.action_eightFragment_to_sevenFragment)
+                    findNavController().navigate(R.id.action_eightFragment_to_sevenFragment, bundle)
                 }
             } else {
                 val asiento: String
@@ -159,7 +162,7 @@ class EightFragment : Fragment() {
                     contador - 1,
                     "\nAsiento ref:" + asiento + "\nCon precio: " + precioCineAsiento.toString()
                 )
-                //val bundle = bundleOf("PrecioTotal" to value)
+
                 findNavController().navigate(R.id.action_eightFragment_to_fiveFragment)
             }
         }

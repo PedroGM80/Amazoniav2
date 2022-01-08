@@ -9,6 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
+import gallego.morales.amazoniav2.MainActivity.Companion.asientos
+import gallego.morales.amazoniav2.MainActivity.Companion.total
 
 class FourFragment : Fragment() {
 
@@ -31,6 +33,8 @@ class FourFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         binding.next4.setOnClickListener {
+            val precioCineAsiento: Double? = arguments?.getDouble("precioPlaza")
+            total += precioCineAsiento!! * (asientos.size - 1)
             findNavController().navigate(R.id.action_fourFragment_to_fiveFragment)
         }
     }

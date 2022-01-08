@@ -66,4 +66,9 @@
     <string name="elegir_asiento">Elegir asiento</string>
     <string name="de_sabor">De sabor:</string>
     <string name="volver_al_inicio">Volver al inicio</string>
+    <string name="info">Info</string>
+    <string name="logo">logo</string>
+    <string name="ejerccio_practico_de_navegaci_n_de_fragment">Ejerccio practico de navegación de fragment</string>
+    <string name="volver">Volver</string>
+    <string name="share_button">share button</string>
 </resources>

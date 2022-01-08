@@ -38,6 +38,19 @@
         android:textSize="15sp"
         android:textStyle="bold" />
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="25dp"
+        android:backgroundTint="#C12A48A3"
+        android:contentDescription="@string/share_button"
+
+        android:src="@android:drawable/ic_menu_share"
+        app:cornerRadius="20dp"
+        tools:ignore="RedundantDescriptionCheck" />
+
     <Button
         android:id="@+id/button_five"
         android:layout_width="wrap_content"

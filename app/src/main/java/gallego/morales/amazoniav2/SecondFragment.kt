@@ -42,7 +42,8 @@ class SecondFragment : Fragment() {
         binding.selectCineA.setOnClickListener {
             PRECIOBASE = 2.2
             NOMBRECINE = binding.selectCineA.contentDescription as String
-            "Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"
+            binding.textviewSecond.text =
+                """Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"""
         }
         binding.selectCineB.setOnClickListener {
             PRECIOBASE = 3.5
@@ -54,7 +55,7 @@ class SecondFragment : Fragment() {
             PRECIOBASE = 3.0
             NOMBRECINE = binding.selectCineC.contentDescription as String
             binding.textviewSecond.text =
-                """Ha seleccionado el cine: """ + binding.selectCineC.contentDescription
+                """Ha seleccionado el cine: ${binding.selectCineC.contentDescription}"""
         }
     }
 
