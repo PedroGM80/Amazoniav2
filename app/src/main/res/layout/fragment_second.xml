@@ -11,7 +11,7 @@
     <ScrollView
         android:layout_width="354dp"
         android:layout_height="205dp"
-        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
         android:foregroundGravity="center_vertical|clip_horizontal"
         android:scrollbarSize="40dp"
         android:textAlignment="center"
@@ -27,7 +27,7 @@
 
             <ImageButton
                 android:id="@+id/selectCineB"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/mk2_cinesur"
                 android:src="@drawable/mk2"
@@ -35,7 +35,7 @@
 
             <ImageButton
                 android:id="@+id/selectCineC"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/union_cines"
                 android:src="@drawable/union"
@@ -43,7 +43,7 @@
 
             <ImageButton
                 android:id="@+id/selectCineA"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/yelmo_cines"
                 android:src="@drawable/cinesur"

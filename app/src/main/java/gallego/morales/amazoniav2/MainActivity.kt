@@ -21,6 +21,14 @@ import gallego.morales.amazoniav2.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
+    companion object {
+        var asientos: MutableList<String> = mutableListOf("")
+        var complementos: MutableList<String> = mutableListOf("")
+
+
+        var total = 0.0
+    }
+
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
 
@@ -65,21 +73,21 @@ class MainActivity : AppCompatActivity() {
             //Toast.makeText(activity, view.id.toString(), Toast.LENGTH_LONG).show()
             val totalId = view.resources.getResourceName(view.id).toString()
             val start = totalId.indexOf('/') + 1
-            val this_id = totalId.subSequence(start, totalId.length)
-            Toast.makeText(this, this_id, Toast.LENGTH_SHORT).show()
+            val my_id = totalId.subSequence(start, totalId.length)
+            Toast.makeText(this, my_id, Toast.LENGTH_SHORT).show()
             val my_butoon = view.findViewById(view.id) as Button
             val my_color_violet = ContextCompat.getColor(my_butoon.context, R.color.violet)
             val my_color_yellow = ContextCompat.getColor(my_butoon.context, R.color.yellow)
             val my_color_green = ContextCompat.getColor(my_butoon.context, R.color.green)
             var my_color = my_color_yellow
-            if (this_id.contains('H') || this_id.contains('I') || this_id.contains('J') || this_id.contains(
+            if (my_id.contains('H') || my_id.contains('I') || my_id.contains('J') || my_id.contains(
                     'k'
                 )
             ) {
                 my_color = my_color_yellow
-            } else if (this_id.contains('A') || this_id.contains('B') || this_id.contains('C')) {
+            } else if (my_id.contains('A') || my_id.contains('B') || my_id.contains('C')) {
                 my_color = my_color_violet
-            } else if (this_id.contains('D') || this_id.contains('E') || this_id.contains('F') || this_id.contains(
+            } else if (my_id.contains('D') || my_id.contains('E') || my_id.contains('F') || my_id.contains(
                     'G'
                 )
             ) {
@@ -87,13 +95,16 @@ class MainActivity : AppCompatActivity() {
             }
             if (!my_butoon.isSelected) {
                 my_butoon.setBackgroundColor(Color.RED)
+                asientos.add(my_id.toString())
                 my_butoon.isSelected = true
             } else {
                 my_butoon.setBackgroundColor(my_color)
                 my_butoon.isSelected = false
+                asientos.remove(my_id.toString())
             }
         }
     }
+
 }
 
 

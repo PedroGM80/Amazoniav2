@@ -11,9 +11,7 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import gallego.morales.amazoniav2.databinding.FragmentSecondBinding
 
-/**
- * A simple [Fragment] subclass as the second destination in the navigation.
- */
+
 class SecondFragment : Fragment() {
 
     private var _binding: FragmentSecondBinding? = null
@@ -21,7 +19,7 @@ class SecondFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-    private var PRECIOBASE = 3.0f
+    private var PRECIOBASE = 3.0
     private var NOMBRECINE = ""
 
     @SuppressLint("SourceLockedOrientationActivity")
@@ -42,18 +40,18 @@ class SecondFragment : Fragment() {
             findNavController().navigate(R.id.action_SecondFragment_to_thirdFragment, bundle)
         }
         binding.selectCineA.setOnClickListener {
-            PRECIOBASE = 2.2f
+            PRECIOBASE = 2.2
             NOMBRECINE = binding.selectCineA.contentDescription as String
             "Ha seleccionado el cine: ${binding.selectCineA.contentDescription}"
         }
         binding.selectCineB.setOnClickListener {
-            PRECIOBASE = 3.5f
+            PRECIOBASE = 3.5
             NOMBRECINE = binding.selectCineB.contentDescription as String
             binding.textviewSecond.text =
                 """Ha seleccionado el cine: ${binding.selectCineB.contentDescription}"""
         }
         binding.selectCineC.setOnClickListener {
-            PRECIOBASE = 3.0f
+            PRECIOBASE = 3.0
             NOMBRECINE = binding.selectCineC.contentDescription as String
             binding.textviewSecond.text =
                 """Ha seleccionado el cine: """ + binding.selectCineC.contentDescription
